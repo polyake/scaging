@@ -7,7 +7,7 @@ import json
 import anndata as ad
 
 ### reading the data that we want to apply the clock to
-adata = ad.read('./blood_data_validation/local.h5ad', backed='r')
+adata = ad.read('./data/local.h5ad', backed='r')
 
 
 ### this function reads data from a h5ad file only for the given cell type into a dataframe -- this is a memory saving way to read the needed data, because in this way we don't load the entire h5ad file into memory
@@ -176,4 +176,4 @@ common_celltypes = ['CD14-low, CD16-positive monocyte',
  'regulatory T cell']
 ### running the prediction process --> here, "common_celltypes" is a list of cell types that we want to apply the speicific clocks to
 for cell_type in common_celltypes:
-    predict(adata, cell_type, "eQTL")
+    predict(adata, cell_type, "application")
