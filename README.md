@@ -8,6 +8,9 @@ Although aging clocks predicting the age of individual organisms have been exten
 * Python 3.8.17
 * requirements.txt
 
+### Data
+The single-cell clocks and all relevant data can be found on Zenodo: 10.5281/zenodo.10405106
+
 ### Pipeline
 1. Single-cell gene expression data has to be in a *./Data* folder in the form of an AnnData object, named *local.h5ad* <br />
 It is assumed that the raw gene expressions are in the main (X) layer of the object and the age of individuals are contained in the *development_stage* column of the .obs layer. Small modification of the code is needed otherwise.
