@@ -1,7 +1,6 @@
-# Supplementary data for the manuscript titled Profiling the transcriptomic age of single-cells in humans
+# Human single-cell transcriptomics aging clocks
 
-## Abstract
-Although aging clocks predicting the age of individual organisms have been extensively studied, the age of individual cells remained largely unexplored. Most recently single-cell omics clocks were developed for the mouse, however, profiling the age of human cells is still lacking. To fill this gap, here we use available scRNA-seq data of 1,058,909 blood cells of 508 healthy, human donors (between 19 and 75 years), for developing single-cell transcriptomic clocks and predicting the age of human blood cells. By the application of the proposed cell-type-specific single-cell clocks, our main observations are that (i) naive CD8-positive T cells are transcriptomically younger than CD8-positive memory T cells; (ii) the transcriptomic age of classical monocyte cells is decreased in COVID-19 patients, and of naive B and T cells in moderate COVID-19 followed by an increase of some cell types in severe COVID-19; and (iii) the transcriptomic age of cells decreased followed by an increase during embryonic development. In summary, here we demonstrate that single-cell transcriptomic clocks are useful tools to investigate the aging process at the single-cell level.
+We developed cell-type-specific single-cell transcriptomic clocks predicting the age of human blood cells. Here, we provide the code and pipeline for the application of the clocks to new data. The clocks and other necessary files can be found on Zenodo: 10.5281/zenodo.10405106
 
 ## Code and data for the application of the single-cell clocks
 ### Requirements
@@ -9,7 +8,7 @@ Although aging clocks predicting the age of individual organisms have been exten
 * requirements.txt
 
 ### Data
-The single-cell clocks and all relevant data can be found on Zenodo: 10.5281/zenodo.10405106
+The single-cell clocks and all relevant data can be found at https://zenodo.org/records/10405106
 
 ### Pipeline
 1. Single-cell gene expression data has to be in a *./Data* folder in the form of an AnnData object, named *local.h5ad* <br />
